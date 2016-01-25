@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Less_1_2.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Less_1_2_3.Default" %>
 
 <!DOCTYPE html>
 
@@ -17,11 +17,14 @@
 
         <%--<asp:Label ID="LabelInfo" runat="server" EnableViewState="true"></asp:Label>--%>
 
-
-                <br></br>
+<%--                <br></br>
         <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                 <br></br>
-        <asp:Button ID="Button" runat="server" Text="Кнопка!" OnClick="Button_Click" />
+        <asp:Button ID="Button" runat="server" Text="Кнопка!" OnClick="Button_Click" />--%>
+
+        <asp:Button ID="Button1" runat="server" Text="Переход на 2 страницу через Response" OnClick="Button1_Click"  />
+        <br />
+        <asp:Button ID="Button2" runat="server" Text="Переход на 3 страницу через Server" OnClick="Button2_Click" />
 
     </form>
 </body>

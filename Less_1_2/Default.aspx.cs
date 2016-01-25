@@ -8,7 +8,7 @@ using System.IO;
 using System.Web.Configuration;
 using System.Configuration;
 
-namespace Less_1_2
+namespace Less_1_2_3
 {
     public partial class Default : System.Web.UI.Page
     {
@@ -65,8 +65,8 @@ namespace Less_1_2
             
 
             // 5
-            Label1.Text = "";
-            Button.Text = "если число - в квадрат и на лейбл";
+            //Label1.Text = "";
+            //Button.Text = "если число - в квадрат и на лейбл";
 
 
         }
@@ -95,18 +95,32 @@ namespace Less_1_2
 
 
             // 5 если в поле ввели число, возводим в квадрат по нажатию на кнопку
-            int num; //число
-            if (Int32.TryParse(TextBox1.Text, out num)) //проверяем возможность приведения к числу
-            {
-                Label1.Text = (num * num).ToString();
-            }
-            else
-            {
-                Label1.Text = "не число";
-            }
+            //число
+            //int num; 
+            //if (Int32.TryParse(TextBox1.Text, out num)) //проверяем возможность приведения к числу
+            //{
+            //    Label1.Text = (num * num).ToString();
+            //}
+            //else
+            //{
+            //    Label1.Text = "не число";
+            //}
 
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            //string path = @"d:\!_ASP.NET\!_Projects\Less_1_2_3\Less_1_2\WebForm1.aspx";
+            //string path = Server.MapPath("~WebForm1.aspx");
+            Response.Redirect("WebForm1.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Server.Transfer("WebForm2.aspx");
+        }
+
 
     }
 }
